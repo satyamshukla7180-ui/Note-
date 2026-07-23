@@ -1,1 +1,67 @@
-.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Notes Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>📝 Welcome to Smart Notes</h1>
+
+<div class="notes-box">
+
+<textarea
+id="note"
+placeholder="Write your notes here..."></textarea>
+
+<button id="saveBtn">
+Save Note
+</button>
+
+<div id="notes"></div>
+
+</div>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+<script>
+
+const firebaseConfig = {
+
+apiKey: "AIzaSyA80eIasPvzWwKyNyTfoyD4hN2ooRQMYdk",
+
+authDomain: "smart-notes-a7df6.firebaseapp.com",
+
+projectId: "smart-notes-a7df6",
+
+storageBucket: "smart-notes-a7df6.firebasestorage.app",
+
+messagingSenderId: "296494031683",
+
+appId: "1:296494031683:web:60101c18dab215ea5905f6"
+
+};
+
+firebase.initializeApp(firebaseConfig);
+
+const auth = firebase.auth();
+
+const db = firebase.firestore();
+
+</script>
+
+</body>
+
+</html>
